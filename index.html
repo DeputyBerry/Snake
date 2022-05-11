@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Snake!</title>
+</head>
+<body>
+    <section id="gameBoard"></section>
+    <section id="scoreBoard">
+        <section class="scoreBoard">Food: <span id="pointsEarned">0</span></section>
+        <section class="scoreBoard">Blocks: <span id="blocksTraveled">0</span></section>
+    </section>
+
+    <section id = "onScreenControllers">
+        <button id="leftButton">◀️</button>
+        <div>
+            <button id="upButton">🔼</button>
+            <button id="DownButton">🔽</button>
+        </div>
+        <button id="rightButton">▶️</button>
+    </section>
+    <script src="snake_game.js"></script>
+</body>
+</html>

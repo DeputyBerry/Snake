@@ -38,3 +38,28 @@ const RIGHT_DIR = 39
 const DOWN_DIR = 40
 
 let snakeCurrentDirection = RIGHT_DIR
+
+
+// Ensures user input is valid, and change on snakeDirection variable
+const changeDirection = newDirectionCode => {
+    if(newDirectionCode == snakeCurrentDirection) return;
+
+    if(newDirectionCode == LEFT_DIR && snakeCurrentDirection !== RIGHT_DIR){
+        snakeCurrentDirection = newDirectionCode
+    }  else if(newDirectionCode == UP_DIR && snakeCurrentDirection !== DOWN_DIR) {
+        snakeCurrentDirection = newDirectionCode
+    } else if (newDirectionCode == RIGHT_DIR && snakeCurrentDirection !== LEFT_DIR){
+        snakeCurrentDirection == newDirectionCode
+    } else if(newDirectionCode == DOWN_DIR && snakeCurrentDirection !== UP_DIR){
+        snakeCurrentDirection == newDirectionCode
+    }
+}
+
+// starting snake position onload
+let currentHeadPosition = TOTAL_PIXEL_COUNT/2
+
+// set intial length
+let snakeLength = 100
+
+// start moving snake
+const moveSnake = ()

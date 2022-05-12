@@ -24,6 +24,7 @@ body {
 .food {
     background: #e9c46a;
     box-shadow: 0 0 10px #fff3b0;
+    color: green;
 }
 
 .snakeBodyPixel {

@@ -144,10 +144,10 @@ addEventListener('keydown', e => changeDirection(e.keyCode))
 
 
 // adding variables for on-screen buttons
-const leftButton = document.getElementById('leftButton')
-const rightButton = document.getElementById('rightButton')
-const upButton = document.getElementById('upButton')
-const downButton = document.getElementById('downButton')
+const leftButton = document.getElementById('#leftButton')
+const rightButton = document.getElementById('#rightButton')
+const upButton = document.getElementById('#upButton')
+const downButton = document.getElementById('#downButton')
 
 // add listeners for on-screen buttons
 leftButton.onclick = () => changeDirection(LEFT_DIR)
